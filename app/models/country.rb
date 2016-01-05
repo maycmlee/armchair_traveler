@@ -1,5 +1,3 @@
-# require 'active_record'
-# require 'pry'
 class Country 
   attr_accessor :country_name
   

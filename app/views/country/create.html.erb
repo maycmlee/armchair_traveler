@@ -1,4 +1,4 @@
-<h2><%= @country_name.capitalize %>!</h2>
+<h1><%= @country_name.capitalize %>!</h1>
 
 <%= link_to "Nah, let's go somewhere else!", "/" %>
 <br><br>
@@ -6,13 +6,13 @@
 <%= image_tag(@map) %>
 
 <br>
-
+<h2>Here are some photos of <%= @country_name.capitalize %>...</h2>
 <% @photo_urls.each do |photo_url| %>
   <%= image_tag(photo_url)%>
 <% end %>
 
 <br><br>
-
+<h2>And some travel videos!</h2>
 <% @video_urls.each do |video_url| %>
   <iframe title='YouTube video player' width='300' height='250' src='<%= video_url %>' type='video/mp4'></iframe>
 <% end %>

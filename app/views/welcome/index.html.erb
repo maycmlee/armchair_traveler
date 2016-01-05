@@ -1,0 +1,6 @@
+<h2>Weclome to the Armchair Traveler!</h2>
+<p>Which country would you like to travel to?</p>
+<%= form_tag ("/country") do %>
+  <%= text_field_tag('country[name]') %>
+  <%= submit_tag value="Let's go!"%>
+<% end %>

@@ -1,0 +1,12 @@
+<h2><%= @country_name.capitalize %>!</h2>
+
+<%= image_tag(@map) %>
+<br>
+<% @photo_urls.each do |photo_url| %>
+  <%= image_tag(photo_url)%>
+<% end %>
+<br><br>
+<% @video_urls.each do |video_url| %>
+  <iframe title='YouTube video player' width='300' height='250' src='<%= video_url %>' type='video/mp4'></iframe>
+<% end %>
+<h2><%= link_to "Let's go somewhere else!", "/" %></h2>

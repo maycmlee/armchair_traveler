@@ -27,6 +27,7 @@ gem 'annotate'
 gem 'flickr_fu'
 gem 'google-api-client', :require => 'google/api_client'
 gem 'json'
+gem 'figaro'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

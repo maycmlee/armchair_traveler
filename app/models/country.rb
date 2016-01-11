@@ -7,9 +7,14 @@ class Country
   
   DEVELOPER_KEY = File.read('googlemap.yml')
   
-  def get_map
+  def get_static_map
     "https://maps.googleapis.com/maps/api/staticmap?center=#{self.country_name}&zoom=4&size=250x250&key=#{DEVELOPER_KEY}"
   end
+
+  def get_google_map
+    Adapters::GoogleMap.new(self.country_name).get_map
+  end
+
 
   def get_photos_url
     Adapters::FlickrSearch.new(self.country_name).get_photos_url

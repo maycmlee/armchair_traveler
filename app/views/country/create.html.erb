@@ -2,10 +2,12 @@
 
 <%= link_to "Nah, let's go somewhere else!", "/" %>
 <br><br>
-
-<%= image_tag(@map) %>
-
+<h3>Map</h3>
+  <div id="map_canvas">
+    <%= image_tag(@map) %>
+  </div>
 <br>
+
 <h2>Here are some photos of <%= @country_name.capitalize %>...</h2>
 <% @photo_urls.each do |photo_url| %>
   <%= image_tag(photo_url)%>
